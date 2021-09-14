@@ -20,7 +20,7 @@ app.use(express.json());
     //     name = name.trim();
     //     students.push(name);
 
-        // rollbar.log("Student added successfully", {author: "bryan", type: "manual entry"});
+        rollbar.log("Hello World");
         // res.status(200).send(students);
     
 
