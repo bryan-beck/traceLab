@@ -15,10 +15,10 @@ app.get("/", (req, res) => {
         res.sendFile(path.join(__dirname, "/public/index.html"));
         rollbar.info("HTML file served successfully!");
     });
-    app.post('/api/student', (req, res) => {
-        let {name} = req.body;
-        name = name.trim();
-        students.push(name);
+    // app.post('/api/student', (req, res) => {
+    //     let {name} = req.body;
+    //     name = name.trim();
+    //     students.push(name);
 
         rollbar.log("Student added successfully", {author: "bryan", type: "manual entry"});
         res.status(200).send(students);
