@@ -30,4 +30,3 @@ app.use(rollbar.errorHandler());
 app.listen(port, () => {
     console.log(`they're taking the hobbitss to ${port}!`);
     });
-© 2021 GitHub, Inc.
