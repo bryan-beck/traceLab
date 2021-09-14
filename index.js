@@ -34,6 +34,10 @@ app.use(express.json());
         }
     
     })
+    Rollbar.critical("Connection error from remote Payments API");
+    Rollbar.critical("DDOS attack in progress!");
+    Rollbar.warning("Connection not secure!");
+    
 
         rollbar.log("Hello World");
         // res.status(200).send(students);
