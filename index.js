@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
         rollbar.log("Student added successfully", {author: "bryan", type: "manual entry"});
         res.status(200).send(students);
-    })
+    
 
 const port = process.env.PORT || 4545;
 app.use(rollbar.errorHandler());
